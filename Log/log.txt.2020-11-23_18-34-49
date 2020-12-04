@@ -1,0 +1,5 @@
+2020-11-23 18:34:49,337--test_login.py--38--ERROR--hanjiping_log--用例登录成功出现错误，错误信息为：0 != 2 within 7 places (2 difference)
+2020-11-23 18:34:49,445--test_login.py--42--INFO--hanjiping_log--用例运行正常密码错误
+2020-11-23 18:34:49,574--test_login.py--42--INFO--hanjiping_log--用例运行正常账号不是标准的手机号
+2020-11-23 18:34:53,812--test_login.py--38--ERROR--hanjiping_log--用例登录成功出现错误，错误信息为：0 != 2 within 7 places (2 difference)
+2020-11-23 18:34:53,916--test_login.py--42--INFO--hanjiping_log--用例运行正常密码错误

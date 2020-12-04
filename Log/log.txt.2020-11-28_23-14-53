@@ -1,0 +1,8 @@
+2020-11-28 23:14:53,515--test_register.py--66--ERROR--hanjiping_log--手机号为字符串类型该条测试用例未通过
+2020-11-28 23:14:53,516--test_register.py--67--ERROR--hanjiping_log--2 != 0 within 7 places (2 difference)
+Traceback (most recent call last):
+  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 49, in test_register
+    self.assertAlmostEqual(expected['code'],res['code'])
+  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 906, in assertAlmostEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0 within 7 places (2 difference)

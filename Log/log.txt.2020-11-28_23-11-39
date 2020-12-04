@@ -1,0 +1,33 @@
+2020-11-28 23:11:36,249--test_register.py--65--ERROR--hanjiping_log--成功-不带用户名该条测试用例未通过
+2020-11-28 23:11:36,250--test_register.py--66--ERROR--hanjiping_log--() is not true
+Traceback (most recent call last):
+  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 56, in test_register
+    self.assertTrue(res1)
+  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 705, in assertTrue
+    raise self.failureException(msg)
+AssertionError: () is not true
+2020-11-28 23:11:36,344--test_register.py--69--INFO--hanjiping_log--不输入手机号该条用例通过
+2020-11-28 23:11:36,441--test_register.py--69--INFO--hanjiping_log--手机号长度10位该条用例通过
+2020-11-28 23:11:36,535--test_register.py--69--INFO--hanjiping_log--手机号长度12位该条用例通过
+2020-11-28 23:11:36,631--test_register.py--69--INFO--hanjiping_log--手机号含有非法字符该条用例通过
+2020-11-28 23:11:36,990--test_register.py--69--INFO--hanjiping_log--已注册过的手机号该条用例通过
+2020-11-28 23:11:37,314--test_register.py--69--INFO--hanjiping_log--密码7位该条用例通过
+2020-11-28 23:11:37,650--test_register.py--69--INFO--hanjiping_log--密码17位该条用例通过
+2020-11-28 23:11:38,023--test_register.py--69--INFO--hanjiping_log--不输入密码该条用例通过
+2020-11-28 23:11:38,537--test_register.py--65--ERROR--hanjiping_log--注册名11位该条测试用例未通过
+2020-11-28 23:11:38,537--test_register.py--66--ERROR--hanjiping_log--2 != 0 within 7 places (2 difference)
+Traceback (most recent call last):
+  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 49, in test_register
+    self.assertAlmostEqual(expected['code'],res['code'])
+  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 906, in assertAlmostEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0 within 7 places (2 difference)
+2020-11-28 23:11:38,862--test_register.py--69--INFO--hanjiping_log--类型输入非0，1内容该条用例通过
+2020-11-28 23:11:39,467--test_register.py--65--ERROR--hanjiping_log--手机号为字符串类型该条测试用例未通过
+2020-11-28 23:11:39,468--test_register.py--66--ERROR--hanjiping_log--2 != 0 within 7 places (2 difference)
+Traceback (most recent call last):
+  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 49, in test_register
+    self.assertAlmostEqual(expected['code'],res['code'])
+  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 906, in assertAlmostEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0 within 7 places (2 difference)

@@ -1,0 +1,10 @@
+2020-11-30 18:21:27,738--test_login.py--48--ERROR--hanjiping_log--用例登录成功出现错误，错误信息为：0 != 2 within 7 places (2 difference)
+2020-11-30 18:21:27,739--test_login.py--49--ERROR--hanjiping_log--0 != 2 within 7 places (2 difference)
+Traceback (most recent call last):
+  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_login.py", line 44, in test_login
+    self.assertAlmostEqual(expected['code'],res["code"])
+  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 906, in assertAlmostEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2 within 7 places (2 difference)
+2020-11-30 18:21:28,098--test_login.py--52--INFO--hanjiping_log--用例运行正常密码错误
+2020-11-30 18:21:28,206--test_login.py--52--INFO--hanjiping_log--用例运行正常账号不是标准的手机号

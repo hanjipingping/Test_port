@@ -1,0 +1,27 @@
+2020-11-30 12:50:13,646--test_login.py--48--ERROR--hanjiping_log--用例登录成功出现错误，错误信息为：0 != 2 within 7 places (2 difference)
+2020-11-30 12:50:13,648--test_login.py--49--ERROR--hanjiping_log--0 != 2 within 7 places (2 difference)
+Traceback (most recent call last):
+  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_login.py", line 44, in test_login
+    self.assertAlmostEqual(expected['code'],res["code"])
+  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 906, in assertAlmostEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2 within 7 places (2 difference)
+2020-11-30 12:50:13,743--test_login.py--52--INFO--hanjiping_log--用例运行正常密码错误
+2020-11-30 12:50:13,859--test_login.py--52--INFO--hanjiping_log--用例运行正常账号不是标准的手机号
+2020-11-30 12:50:13,956--test_recharge.py--47--INFO--hanjiping_log--充值成功这条用例未通过
+2020-11-30 12:50:14,058--test_recharge.py--47--INFO--hanjiping_log--充值成功-金额为小数这条用例未通过
+2020-11-30 12:50:14,151--test_recharge.py--47--INFO--hanjiping_log--id错误(不是当前用的id)这条用例未通过
+2020-11-30 12:50:14,250--test_recharge.py--47--INFO--hanjiping_log--不输入id这条用例未通过
+2020-11-30 12:50:14,382--test_recharge.py--47--INFO--hanjiping_log--不输入金额这条用例未通过
+2020-11-30 12:50:14,478--test_recharge.py--47--INFO--hanjiping_log--充值金额为负数这条用例未通过
+2020-11-30 12:50:14,597--test_recharge.py--47--INFO--hanjiping_log--充值金额为500001这条用例未通过
+2020-11-30 12:50:14,700--test_recharge.py--47--INFO--hanjiping_log--充值金额非数字这条用例未通过
+2020-11-30 12:50:14,797--test_recharge.py--47--INFO--hanjiping_log--充值金额小数点3位这条用例未通过
+2020-11-30 12:50:15,832--test_register.py--70--INFO--hanjiping_log--注册成功-带注册名该条用例通过
+2020-11-30 12:50:16,754--test_register.py--70--INFO--hanjiping_log--成功-不带用户名该条用例通过
+2020-11-30 12:50:16,854--test_register.py--70--INFO--hanjiping_log--不输入手机号该条用例通过
+2020-11-30 12:50:16,952--test_register.py--70--INFO--hanjiping_log--手机号长度10位该条用例通过
+2020-11-30 12:50:17,049--test_register.py--70--INFO--hanjiping_log--手机号长度12位该条用例通过
+2020-11-30 12:50:17,145--test_register.py--70--INFO--hanjiping_log--手机号含有非法字符该条用例通过
+2020-11-30 12:50:17,469--test_register.py--70--INFO--hanjiping_log--已注册过的手机号该条用例通过
+2020-11-30 12:50:17,887--test_register.py--70--INFO--hanjiping_log--密码7位该条用例通过

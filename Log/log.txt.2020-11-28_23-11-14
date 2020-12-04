@@ -1,0 +1,8 @@
+2020-11-28 23:11:14,688--test_register.py--65--ERROR--hanjiping_log--注册成功-带注册名该条测试用例未通过
+2020-11-28 23:11:14,689--test_register.py--66--ERROR--hanjiping_log--() is not true
+Traceback (most recent call last):
+  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 56, in test_register
+    self.assertTrue(res)
+  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 705, in assertTrue
+    raise self.failureException(msg)
+AssertionError: () is not true
