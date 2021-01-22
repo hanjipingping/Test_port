@@ -13,6 +13,7 @@ from Common.Excel import Manage_Excel
 from Common.INI_setting import config
 from Common.get_log import mylog_test
 from Common.handel_path import INI_PATH,DATA_DIR
+from Common.handel_sql import sql_data
 @my_ddt.ddt
 class TestRecharge(unittest.TestCase):
 
@@ -44,6 +45,7 @@ class TestRecharge(unittest.TestCase):
         URL = config.get('request','url')  + case['url']
         #获取请求头
         headers = eval(config.get('request','headers'))
+        headers["Authorization"] = self.token
         #获取data
 
         params = eval(case['data'])
@@ -54,14 +56,29 @@ class TestRecharge(unittest.TestCase):
         excpted = eval(case['expected'])
         #获取请求方法
         mothed = case['method']
+
+
+
+        sql = case["check_sql"]
+
+        if sql :
+            start_money = sql_data.find_data(sql.format(self.id))
+            s_money = start_money[0]['leave_amount']
         #发送请求
         request = requests.request(method=mothed,json= params,headers=headers,url=URL)
         res = request.json()
 
+        if sql :
+            end_money = sql_data.find_data(sql.format(self.id))
+            e_money = end_money[0]['leave_amount']
+
         try:
             #比对预期结果与实际结果
             self.assertEqual(excpted['code'],res['code'])
+            if sql:
+                self.assertEqual(float(e_money-s_money),params["amount"])
             mylog_test.info(f"{case['title']}这条用例通过")
+
 
         except AssertionError as e:
             mylog_test.info(f'{case["title"]}这条用例未通过')

@@ -7035,7 +7035,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label text-danger">用例错误:</label>
                                     <div class="col-sm-5">
-                                        <span class="form-control text-danger" id="testError">1</span>
+                                        <span class="form-control text-danger" id="testError">2</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -7176,24 +7176,24 @@
 
 
     var resultData = {
-        "testPass": 13,
+        "testPass": 30,
         "testResult": [
             
                 {
                     "className": "TestLogin",
                     "methodName": "test_login_1",
-                    "description": "None",
-                    "spendTime": "0.127s",
+                    "description": "登录成功",
+                    "spendTime": "0.41s",
                     "status": "失败",
-                    "log": ['test_login_1 (test_login.TestLogin)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 59, in testPartExecutor\n    yield\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 628, in run\n    testMethod()\n', '  File "/Users/hanjiping/Port_test01/lib/python3.7/site-packages/ddt.py", line 182, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_login.py", line 50, in test_login\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_login.py", line 44, in test_login\n    self.assertAlmostEqual(expected[\'code\'],res["code"])\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 906, in assertAlmostEqual\n    raise self.failureException(msg)\n', 'AssertionError: 0 != 2 within 7 places (2 difference)\n']
+                    "log": ['test_login_1 (test_login.TestLogin)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_login.py", line 52, in test_login\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_login.py", line 46, in test_login\n    self.assertAlmostEqual(expected[\'code\'],res["code"])\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 966, in assertAlmostEqual\n    raise self.failureException(msg)\n', 'AssertionError: 0 != 2 within 7 places (2 difference)\n']
                 },
 
             
                 {
                     "className": "TestLogin",
                     "methodName": "test_login_2",
-                    "description": "None",
-                    "spendTime": "0.487s",
+                    "description": "密码错误",
+                    "spendTime": "2.48s",
                     "status": "成功",
                     "log": ['test_login_2 (test_login.TestLogin)执行——>【通过】\n']
                 },
@@ -7202,8 +7202,8 @@
                 {
                     "className": "TestLogin",
                     "methodName": "test_login_3",
-                    "description": "None",
-                    "spendTime": "0.103s",
+                    "description": "账号不是标准的手机号",
+                    "spendTime": "0.17s",
                     "status": "成功",
                     "log": ['test_login_3 (test_login.TestLogin)执行——>【通过】\n']
                 },
@@ -7211,11 +7211,91 @@
             
                 {
                     "className": "TestRecharge",
-                    "methodName": "setUpClass ",
-                    "description": "None",
-                    "spendTime": "0",
-                    "status": "错误",
-                    "log": ['Traceback (most recent call last):\n', '  File "/opt/anaconda3/lib/python3.7/unittest/suite.py", line 163, in _handleClassSetUp\n    setUpClass()\n', "TypeError: setUpClass() missing 1 required positional argument: 'cls'\n"]
+                    "methodName": "test_register_1",
+                    "description": "充值成功",
+                    "spendTime": "0.312s",
+                    "status": "成功",
+                    "log": ['test_register_1 (test_recharge.TestRecharge)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestRecharge",
+                    "methodName": "test_register_2",
+                    "description": "充值成功-金额为小数",
+                    "spendTime": "0.307s",
+                    "status": "成功",
+                    "log": ['test_register_2 (test_recharge.TestRecharge)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestRecharge",
+                    "methodName": "test_register_3",
+                    "description": "id错误(不是当前用的id)",
+                    "spendTime": "0.105s",
+                    "status": "成功",
+                    "log": ['test_register_3 (test_recharge.TestRecharge)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestRecharge",
+                    "methodName": "test_register_4",
+                    "description": "不输入id",
+                    "spendTime": "0.109s",
+                    "status": "成功",
+                    "log": ['test_register_4 (test_recharge.TestRecharge)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestRecharge",
+                    "methodName": "test_register_5",
+                    "description": "不输入金额",
+                    "spendTime": "0.105s",
+                    "status": "失败",
+                    "log": ['test_register_5 (test_recharge.TestRecharge)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_recharge.py", line 86, in test_register\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_recharge.py", line 77, in test_register\n    self.assertEqual(excpted[\'code\'],res[\'code\'])\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 912, in assertEqual\n    assertion_func(first, second, msg=msg)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 905, in _baseAssertEqual\n    raise self.failureException(msg)\n', 'AssertionError: 1 != 2\n']
+                },
+
+            
+                {
+                    "className": "TestRecharge",
+                    "methodName": "test_register_6",
+                    "description": "充值金额为负数",
+                    "spendTime": "0.104s",
+                    "status": "成功",
+                    "log": ['test_register_6 (test_recharge.TestRecharge)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestRecharge",
+                    "methodName": "test_register_7",
+                    "description": "充值金额为500001",
+                    "spendTime": "0.109s",
+                    "status": "成功",
+                    "log": ['test_register_7 (test_recharge.TestRecharge)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestRecharge",
+                    "methodName": "test_register_8",
+                    "description": "充值金额非数字",
+                    "spendTime": "0.108s",
+                    "status": "成功",
+                    "log": ['test_register_8 (test_recharge.TestRecharge)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestRecharge",
+                    "methodName": "test_register_9",
+                    "description": "充值金额小数点3位",
+                    "spendTime": "0.118s",
+                    "status": "成功",
+                    "log": ['test_register_9 (test_recharge.TestRecharge)执行——>【通过】\n']
                 },
 
             
@@ -7223,7 +7303,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_01",
                     "description": "注册成功-带注册名",
-                    "spendTime": "1.09s",
+                    "spendTime": "0.942s",
                     "status": "成功",
                     "log": ['test_register_01 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7233,7 +7313,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_02",
                     "description": "成功-不带用户名",
-                    "spendTime": "1.0s",
+                    "spendTime": "0.904s",
                     "status": "成功",
                     "log": ['test_register_02 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7243,7 +7323,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_03",
                     "description": "不输入手机号",
-                    "spendTime": "0.13s",
+                    "spendTime": "0.105s",
                     "status": "成功",
                     "log": ['test_register_03 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7253,7 +7333,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_04",
                     "description": "手机号长度10位",
-                    "spendTime": "0.117s",
+                    "spendTime": "0.101s",
                     "status": "成功",
                     "log": ['test_register_04 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7273,7 +7353,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_06",
                     "description": "手机号含有非法字符",
-                    "spendTime": "0.15s",
+                    "spendTime": "0.1s",
                     "status": "成功",
                     "log": ['test_register_06 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7283,7 +7363,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_07",
                     "description": "已注册过的手机号",
-                    "spendTime": "0.363s",
+                    "spendTime": "0.293s",
                     "status": "成功",
                     "log": ['test_register_07 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7293,7 +7373,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_08",
                     "description": "密码7位",
-                    "spendTime": "0.584s",
+                    "spendTime": "0.415s",
                     "status": "成功",
                     "log": ['test_register_08 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7303,7 +7383,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_09",
                     "description": "密码17位",
-                    "spendTime": "0.775s",
+                    "spendTime": "0.407s",
                     "status": "成功",
                     "log": ['test_register_09 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7313,7 +7393,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_10",
                     "description": "不输入密码",
-                    "spendTime": "1.24s",
+                    "spendTime": "0.423s",
                     "status": "成功",
                     "log": ['test_register_10 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7323,9 +7403,9 @@
                     "className": "TestRegister",
                     "methodName": "test_register_11",
                     "description": "注册名11位",
-                    "spendTime": "0.801s",
+                    "spendTime": "0.589s",
                     "status": "失败",
-                    "log": ['test_register_11 (test_register.TestRegister)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 59, in testPartExecutor\n    yield\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 628, in run\n    testMethod()\n', '  File "/Users/hanjiping/PycharmProjects/Port_test01/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 68, in test_register\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 49, in test_register\n    self.assertAlmostEqual(expected[\'code\'],res[\'code\'])\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 906, in assertAlmostEqual\n    raise self.failureException(msg)\n', 'AssertionError: 2 != 0 within 7 places (2 difference)\n']
+                    "log": ['test_register_11 (test_register.TestRegister)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_register.py", line 68, in test_register\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_register.py", line 49, in test_register\n    self.assertAlmostEqual(expected[\'code\'],res[\'code\'])\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 966, in assertAlmostEqual\n    raise self.failureException(msg)\n', 'AssertionError: 2 != 0 within 7 places (2 difference)\n']
                 },
 
             
@@ -7333,7 +7413,7 @@
                     "className": "TestRegister",
                     "methodName": "test_register_12",
                     "description": "类型输入非0，1内容",
-                    "spendTime": "0.404s",
+                    "spendTime": "0.418s",
                     "status": "成功",
                     "log": ['test_register_12 (test_register.TestRegister)执行——>【通过】\n']
                 },
@@ -7343,9 +7423,159 @@
                     "className": "TestRegister",
                     "methodName": "test_register_13",
                     "description": "手机号为字符串类型",
-                    "spendTime": "0.793s",
+                    "spendTime": "2.08s",
                     "status": "失败",
-                    "log": ['test_register_13 (test_register.TestRegister)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 59, in testPartExecutor\n    yield\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 628, in run\n    testMethod()\n', '  File "/Users/hanjiping/PycharmProjects/Port_test01/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 68, in test_register\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/Port_test01/TestCase/test_register.py", line 49, in test_register\n    self.assertAlmostEqual(expected[\'code\'],res[\'code\'])\n', '  File "/opt/anaconda3/lib/python3.7/unittest/case.py", line 906, in assertAlmostEqual\n    raise self.failureException(msg)\n', 'AssertionError: 2 != 0 within 7 places (2 difference)\n']
+                    "log": ['test_register_13 (test_register.TestRegister)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_register.py", line 68, in test_register\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_register.py", line 49, in test_register\n    self.assertAlmostEqual(expected[\'code\'],res[\'code\'])\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 966, in assertAlmostEqual\n    raise self.failureException(msg)\n', 'AssertionError: 2 != 0 within 7 places (2 difference)\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_01",
+                    "description": "提现成功-整数",
+                    "spendTime": "0.547s",
+                    "status": "成功",
+                    "log": ['test_withdraw_01 (test_withdraw.TestWithDraw)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_02",
+                    "description": "提现成功-1位小数",
+                    "spendTime": "0.306s",
+                    "status": "失败",
+                    "log": ['test_withdraw_02 (test_withdraw.TestWithDraw)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 70, in test_withdraw\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 64, in test_withdraw\n    self.assertEqual(float(s_money-e_money),params[\'amount\'])\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 912, in assertEqual\n    assertion_func(first, second, msg=msg)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 905, in _baseAssertEqual\n    raise self.failureException(msg)\n', 'AssertionError: 0.0 != 600.1\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_03",
+                    "description": "提现成功-2位小数",
+                    "spendTime": "0.319s",
+                    "status": "失败",
+                    "log": ['test_withdraw_03 (test_withdraw.TestWithDraw)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 70, in test_withdraw\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 64, in test_withdraw\n    self.assertEqual(float(s_money-e_money),params[\'amount\'])\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 912, in assertEqual\n    assertion_func(first, second, msg=msg)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 905, in _baseAssertEqual\n    raise self.failureException(msg)\n', 'AssertionError: 0.0 != 600.22\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_04",
+                    "description": "提现成功-50万",
+                    "spendTime": "0.312s",
+                    "status": "失败",
+                    "log": ['test_withdraw_04 (test_withdraw.TestWithDraw)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 70, in test_withdraw\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 64, in test_withdraw\n    self.assertEqual(float(s_money-e_money),params[\'amount\'])\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 912, in assertEqual\n    assertion_func(first, second, msg=msg)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 905, in _baseAssertEqual\n    raise self.failureException(msg)\n', 'AssertionError: 0.0 != 500000\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_05",
+                    "description": "提现金额大于账户余额",
+                    "spendTime": "0.000639s",
+                    "status": "错误",
+                    "log": ['Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 45, in test_withdraw\n    params = eval(case[\'data\'])\n', '  File "<string>", line 1\n', '    {"member_id": "#member_id#","amount":10000\n', '                                             ^\n', 'SyntaxError: unexpected EOF while parsing\n', 'test_withdraw_05 (test_withdraw.TestWithDraw)执行——>【错误Error】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_06",
+                    "description": "会员id为空",
+                    "spendTime": "0.105s",
+                    "status": "成功",
+                    "log": ['test_withdraw_06 (test_withdraw.TestWithDraw)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_07",
+                    "description": "会员id不存在",
+                    "spendTime": "0.108s",
+                    "status": "成功",
+                    "log": ['test_withdraw_07 (test_withdraw.TestWithDraw)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_08",
+                    "description": "会员id为数值",
+                    "spendTime": "0.000754s",
+                    "status": "错误",
+                    "log": ['Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 45, in test_withdraw\n    params = eval(case[\'data\'])\n', '  File "<string>", line 1\n', '    {"member_id": #member_id#,"amount":600}\n', '                                          ^\n', 'SyntaxError: unexpected EOF while parsing\n', 'test_withdraw_08 (test_withdraw.TestWithDraw)执行——>【错误Error】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_09",
+                    "description": "会员id为小数",
+                    "spendTime": "0.11s",
+                    "status": "成功",
+                    "log": ['test_withdraw_09 (test_withdraw.TestWithDraw)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_10",
+                    "description": "提现金额为0",
+                    "spendTime": "0.121s",
+                    "status": "失败",
+                    "log": ['test_withdraw_10 (test_withdraw.TestWithDraw)执行——>【失败】\n', 'Traceback (most recent call last):\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 60, in testPartExecutor\n    yield\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 676, in run\n    self._callTestMethod(testMethod)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 633, in _callTestMethod\n    method()\n', '  File "/Users/hanjiping/PycharmProjects/Common/my_ddt.py", line 189, in wrapper\n    return func(self, *args, **kwargs)\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 70, in test_withdraw\n    raise e\n', '  File "/Users/hanjiping/PycharmProjects/TestCase/test_withdraw.py", line 65, in test_withdraw\n    self.assertEqual(expected[\'code\'],res[\'code\'])\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 912, in assertEqual\n    assertion_func(first, second, msg=msg)\n', '  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/unittest/case.py", line 905, in _baseAssertEqual\n    raise self.failureException(msg)\n', 'AssertionError: 2 != 0\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_11",
+                    "description": "提现金额为负数",
+                    "spendTime": "0.104s",
+                    "status": "成功",
+                    "log": ['test_withdraw_11 (test_withdraw.TestWithDraw)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_12",
+                    "description": "提现金额为空",
+                    "spendTime": "0.108s",
+                    "status": "成功",
+                    "log": ['test_withdraw_12 (test_withdraw.TestWithDraw)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_13",
+                    "description": "提现金额-3位小数",
+                    "spendTime": "0.115s",
+                    "status": "成功",
+                    "log": ['test_withdraw_13 (test_withdraw.TestWithDraw)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_14",
+                    "description": "提现金额-大于50万",
+                    "spendTime": "0.102s",
+                    "status": "成功",
+                    "log": ['test_withdraw_14 (test_withdraw.TestWithDraw)执行——>【通过】\n']
+                },
+
+            
+                {
+                    "className": "TestWithDraw",
+                    "methodName": "test_withdraw_15",
+                    "description": "提现金额-非数字",
+                    "spendTime": "0.1s",
+                    "status": "成功",
+                    "log": ['test_withdraw_15 (test_withdraw.TestWithDraw)执行——>【通过】\n']
                 },
 
             
@@ -7353,12 +7583,12 @@
 
         ],
         "testName": "jiping han",
-        "testAll": "17",
-        "testFail": "3",
-        "beginTime": "2020-11-30 18:17:55",
-        "totalTime": "8.29 S",
+        "testAll": "40",
+        "testFail": "8",
+        "beginTime": "2020-12-07 11:52:49",
+        "totalTime": "14.85 S",
         "testSkip": "0",
-        "testError": "1"
+        "testError": "2"
     };
 
     function details(obj) {

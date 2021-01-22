@@ -1,1 +1,1 @@
-2020-12-03 18:28:52,742--test_recharge.py--67--INFO--hanjiping_log--充值成功这条用例未通过
+2020-12-08 23:22:13,420--test_withdraw.py--65--INFO--hanjiping_log--提现成功-整数执行失败

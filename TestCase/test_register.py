@@ -5,7 +5,7 @@
 # File :test_register.py
 # @software PyCharm
 import unittest
-import ddt
+
 import os
 import requests
 import random

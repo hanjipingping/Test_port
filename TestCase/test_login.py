@@ -5,23 +5,25 @@
 # File :test_login.py
 # @software PyCharm
 import unittest
-import ddt
+import os
+from Common import my_ddt
 import requests
+from Common.handel_path import DATA_DIR
 from Common.Excel import Manage_Excel
 from Common.get_log import mylog_test
 from Common.INI_setting import config
 #读取excel数据
-test = Manage_Excel("/Users/hanjiping/PycharmProjects/Port_test01/Data/cases.xlsx", 'login')
+test = Manage_Excel(os.path.join(DATA_DIR,'cases.xlsx'),'login')
 test_01 = test.get_data()
 
 
 
 
-@ddt.ddt
+@my_ddt.ddt
 class TestLogin(unittest.TestCase):
 
 
-    @ddt.data(*test_01)
+    @my_ddt.data(*test_01)
     def test_login(self,case):
         #准备用例数据
         #获取url

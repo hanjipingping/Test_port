@@ -12,6 +12,7 @@ from unittestreport import TestRunner
 
 suite = unittest.defaultTestLoader.discover(CASE_DIR)
 
+
 runner = TestRunner(
     suite,
     filename='接口测试报告',
