@@ -1,0 +1,777 @@
+2021-01-04 16:40:06,235 - [test_01register.py-->line:63] - INFO: 用例注册成功-带注册名，执行通过
+2021-01-04 16:40:06,515 - [test_01register.py-->line:63] - INFO: 用例成功-不带用户名，执行通过
+2021-01-04 16:40:06,609 - [test_01register.py-->line:63] - INFO: 用例不输入手机号，执行通过
+2021-01-04 16:40:06,713 - [test_01register.py-->line:63] - INFO: 用例手机号长度10位，执行通过
+2021-01-04 16:40:06,809 - [test_01register.py-->line:63] - INFO: 用例手机号长度12位，执行通过
+2021-01-04 16:40:06,906 - [test_01register.py-->line:63] - INFO: 用例手机号含有非法字符，执行通过
+2021-01-04 16:40:07,006 - [test_01register.py-->line:63] - INFO: 用例已注册过的手机号，执行通过
+2021-01-04 16:40:07,194 - [test_01register.py-->line:63] - INFO: 用例密码7位，执行通过
+2021-01-04 16:40:07,369 - [test_01register.py-->line:63] - INFO: 用例密码17位，执行通过
+2021-01-04 16:40:07,547 - [test_01register.py-->line:63] - INFO: 用例不输入密码，执行通过
+2021-01-04 16:40:07,729 - [test_01register.py-->line:63] - INFO: 用例注册名11位，执行通过
+2021-01-04 16:40:07,908 - [test_01register.py-->line:63] - INFO: 用例类型输入非0，1内容，执行通过
+2021-01-04 16:40:08,100 - [test_01register.py-->line:59] - ERROR: 用例手机号为字符串类型，执行未通过
+2021-01-04 16:40:08,100 - [test_01register.py-->line:60] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_01register.py", line 49, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 16:40:08,202 - [test_02login.py-->line:56] - INFO: 用例登录成功，执行通过
+2021-01-04 16:40:08,291 - [test_02login.py-->line:56] - INFO: 用例手机号为空，执行通过
+2021-01-04 16:40:08,383 - [test_02login.py-->line:56] - INFO: 用例密码为空，执行通过
+2021-01-04 16:40:08,482 - [test_02login.py-->line:56] - INFO: 用例手机号未注册，执行通过
+2021-01-04 16:40:08,584 - [test_02login.py-->line:56] - INFO: 用例密码错误，执行通过
+2021-01-04 16:40:08,679 - [test_02login.py-->line:56] - INFO: 用例手机号格式错误，执行通过
+2021-01-04 16:40:09,044 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例充值成功，执行通过
+2021-01-04 16:40:09,302 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例充值成功-金额为小数，执行通过
+2021-01-04 16:40:09,394 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例id错误(不是当前用的id)，执行通过
+2021-01-04 16:40:09,494 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例不输入id，执行通过
+2021-01-04 16:40:09,588 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例不输入金额，执行未通过
+2021-01-04 16:40:09,588 - [test_03recharge_withdraw.py-->line:77] - ERROR: 1 != 2
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 67, in test_recharge
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2021-01-04 16:40:09,681 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额为负数，执行未通过
+2021-01-04 16:40:09,681 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2021-01-04 16:40:09,770 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额为500001，执行未通过
+2021-01-04 16:40:09,770 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2021-01-04 16:40:09,859 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额非数字，执行未通过
+2021-01-04 16:40:09,860 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须为数值型' != '余额必须为数值型'
+- 金额必须为数值型
+? ^
++ 余额必须为数值型
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须为数值型' != '余额必须为数值型'
+- 金额必须为数值型
+? ^
++ 余额必须为数值型
+? ^
+
+2021-01-04 16:40:09,950 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额小数点3位，执行未通过
+2021-01-04 16:40:09,951 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+
+2021-01-04 16:40:10,308 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-整数，执行通过
+2021-01-04 16:40:10,570 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-1位小数，执行通过
+2021-01-04 16:40:10,833 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-2位小数，执行通过
+2021-01-04 16:40:11,092 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-50万，执行通过
+2021-01-04 16:40:11,184 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id为空，执行通过
+2021-01-04 16:40:11,281 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id不存在，执行通过
+2021-01-04 16:40:11,383 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例会员id为数值，执行未通过
+2021-01-04 16:40:11,383 - [test_03recharge_withdraw.py-->line:132] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 122, in test_withdraw
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 16:40:11,473 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id为小数，执行通过
+2021-01-04 16:40:11,567 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为0，执行未通过
+2021-01-04 16:40:11,567 - [test_03recharge_withdraw.py-->line:132] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 122, in test_withdraw
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 16:40:11,661 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为负数，执行未通过
+2021-01-04 16:40:11,662 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2021-01-04 16:40:11,753 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为空，执行未通过
+2021-01-04 16:40:11,754 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额为空' != '余额为空'
+- 金额为空
+? ^
++ 余额为空
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' != '余额为空'
+- 金额为空
+? ^
++ 余额为空
+? ^
+
+2021-01-04 16:40:11,844 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额-3位小数，执行未通过
+2021-01-04 16:40:11,844 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+
+2021-01-04 16:40:11,937 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额-大于50万，执行未通过
+2021-01-04 16:40:11,937 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2021-01-04 16:40:12,029 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现金额-非数字，执行通过
+2021-01-04 16:40:12,302 - [test_05add.py-->line:69] - INFO: 用例加标成功，执行通过
+2021-01-04 16:40:12,396 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款人id为空，执行通过
+2021-01-04 16:40:12,490 - [test_05add.py-->line:69] - INFO: 用例加标失败—标题为空，执行通过
+2021-01-04 16:40:12,588 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为空，执行通过
+2021-01-04 16:40:12,679 - [test_05add.py-->line:69] - INFO: 用例加标失败—年利率为空，执行通过
+2021-01-04 16:40:12,770 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款期限为空，执行通过
+2021-01-04 16:40:12,868 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款期限类型为空，执行通过
+2021-01-04 16:40:12,960 - [test_05add.py-->line:69] - INFO: 用例加标失败—竞标天数为空，执行通过
+2021-01-04 16:40:13,054 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款人id不是当前登录用户，执行通过
+2021-01-04 16:40:13,152 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为负数，执行通过
+2021-01-04 16:40:13,245 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为小数，执行通过
+2021-01-04 16:40:13,718 - [test_06aduit.py-->line:109] - INFO: 用例审核通过，执行通过
+2021-01-04 16:40:13,990 - [test_06aduit.py-->line:109] - INFO: 用例审核不通过，执行通过
+2021-01-04 16:40:14,179 - [test_06aduit.py-->line:109] - INFO: 用例项目不待审核状态，执行通过
+2021-01-04 16:40:14,374 - [test_06aduit.py-->line:109] - INFO: 用例参数approved_or_not为空，执行通过
+2021-01-04 16:40:14,560 - [test_06aduit.py-->line:109] - INFO: 用例项目id为空，执行通过
+2021-01-04 16:40:14,750 - [test_06aduit.py-->line:109] - INFO: 用例项目id不存在，执行通过
+2021-01-04 16:40:15,836 - [test_07invest.py-->line:144] - INFO: 用例投资人正常投资，执行通过
+2021-01-04 16:40:15,927 - [test_07invest.py-->line:144] - INFO: 用例投资人id为空，执行通过
+2021-01-04 16:40:16,016 - [test_07invest.py-->line:144] - INFO: 用例标id为空，执行通过
+2021-01-04 16:40:16,107 - [test_07invest.py-->line:144] - INFO: 用例投资金额为空，执行通过
+2021-01-04 17:18:44,461 - [test_01register.py-->line:63] - INFO: 用例注册成功-带注册名，执行通过
+2021-01-04 17:18:44,757 - [test_01register.py-->line:63] - INFO: 用例成功-不带用户名，执行通过
+2021-01-04 17:18:44,848 - [test_01register.py-->line:63] - INFO: 用例不输入手机号，执行通过
+2021-01-04 17:18:44,940 - [test_01register.py-->line:63] - INFO: 用例手机号长度10位，执行通过
+2021-01-04 17:18:45,033 - [test_01register.py-->line:63] - INFO: 用例手机号长度12位，执行通过
+2021-01-04 17:18:45,128 - [test_01register.py-->line:63] - INFO: 用例手机号含有非法字符，执行通过
+2021-01-04 17:18:45,232 - [test_01register.py-->line:63] - INFO: 用例已注册过的手机号，执行通过
+2021-01-04 17:18:45,430 - [test_01register.py-->line:63] - INFO: 用例密码7位，执行通过
+2021-01-04 17:18:45,619 - [test_01register.py-->line:63] - INFO: 用例密码17位，执行通过
+2021-01-04 17:18:45,806 - [test_01register.py-->line:63] - INFO: 用例不输入密码，执行通过
+2021-01-04 17:18:45,996 - [test_01register.py-->line:63] - INFO: 用例注册名11位，执行通过
+2021-01-04 17:18:46,191 - [test_01register.py-->line:63] - INFO: 用例类型输入非0，1内容，执行通过
+2021-01-04 17:18:46,397 - [test_01register.py-->line:59] - ERROR: 用例手机号为字符串类型，执行未通过
+2021-01-04 17:18:46,398 - [test_01register.py-->line:60] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_01register.py", line 49, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 17:18:46,506 - [test_02login.py-->line:56] - INFO: 用例登录成功，执行通过
+2021-01-04 17:18:46,600 - [test_02login.py-->line:56] - INFO: 用例手机号为空，执行通过
+2021-01-04 17:18:46,696 - [test_02login.py-->line:56] - INFO: 用例密码为空，执行通过
+2021-01-04 17:18:46,801 - [test_02login.py-->line:56] - INFO: 用例手机号未注册，执行通过
+2021-01-04 17:18:46,910 - [test_02login.py-->line:56] - INFO: 用例密码错误，执行通过
+2021-01-04 17:18:47,004 - [test_02login.py-->line:56] - INFO: 用例手机号格式错误，执行通过
+2021-01-04 17:18:47,369 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例充值成功，执行通过
+2021-01-04 17:18:47,634 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例充值成功-金额为小数，执行通过
+2021-01-04 17:18:47,729 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例id错误(不是当前用的id)，执行通过
+2021-01-04 17:18:47,823 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例不输入id，执行通过
+2021-01-04 17:18:47,918 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例不输入金额，执行未通过
+2021-01-04 17:18:47,919 - [test_03recharge_withdraw.py-->line:77] - ERROR: 1 != 2
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 67, in test_recharge
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2021-01-04 17:18:48,015 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额为负数，执行未通过
+2021-01-04 17:18:48,015 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2021-01-04 17:18:48,110 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额为500001，执行未通过
+2021-01-04 17:18:48,110 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2021-01-04 17:18:48,207 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额非数字，执行未通过
+2021-01-04 17:18:48,207 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须为数值型' != '余额必须为数值型'
+- 金额必须为数值型
+? ^
++ 余额必须为数值型
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须为数值型' != '余额必须为数值型'
+- 金额必须为数值型
+? ^
++ 余额必须为数值型
+? ^
+
+2021-01-04 17:18:48,303 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额小数点3位，执行未通过
+2021-01-04 17:18:48,303 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+
+2021-01-04 17:18:48,681 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-整数，执行通过
+2021-01-04 17:18:48,951 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-1位小数，执行通过
+2021-01-04 17:18:49,221 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-2位小数，执行通过
+2021-01-04 17:18:49,484 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-50万，执行通过
+2021-01-04 17:18:49,576 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id为空，执行通过
+2021-01-04 17:18:49,667 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id不存在，执行通过
+2021-01-04 17:18:49,770 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例会员id为数值，执行未通过
+2021-01-04 17:18:49,771 - [test_03recharge_withdraw.py-->line:132] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 122, in test_withdraw
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 17:18:49,873 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id为小数，执行通过
+2021-01-04 17:18:49,971 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为0，执行未通过
+2021-01-04 17:18:49,971 - [test_03recharge_withdraw.py-->line:132] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 122, in test_withdraw
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 17:18:50,071 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为负数，执行未通过
+2021-01-04 17:18:50,072 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2021-01-04 17:18:50,161 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为空，执行未通过
+2021-01-04 17:18:50,161 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额为空' != '余额为空'
+- 金额为空
+? ^
++ 余额为空
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' != '余额为空'
+- 金额为空
+? ^
++ 余额为空
+? ^
+
+2021-01-04 17:18:50,253 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额-3位小数，执行未通过
+2021-01-04 17:18:50,253 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+
+2021-01-04 17:18:50,350 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额-大于50万，执行未通过
+2021-01-04 17:18:50,350 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2021-01-04 17:18:50,444 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现金额-非数字，执行通过
+2021-01-04 17:18:50,723 - [test_05add.py-->line:69] - INFO: 用例加标成功，执行通过
+2021-01-04 17:18:50,821 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款人id为空，执行通过
+2021-01-04 17:18:50,912 - [test_05add.py-->line:69] - INFO: 用例加标失败—标题为空，执行通过
+2021-01-04 17:18:51,010 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为空，执行通过
+2021-01-04 17:18:51,107 - [test_05add.py-->line:69] - INFO: 用例加标失败—年利率为空，执行通过
+2021-01-04 17:18:51,203 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款期限为空，执行通过
+2021-01-04 17:18:51,298 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款期限类型为空，执行通过
+2021-01-04 17:18:51,390 - [test_05add.py-->line:69] - INFO: 用例加标失败—竞标天数为空，执行通过
+2021-01-04 17:18:51,484 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款人id不是当前登录用户，执行通过
+2021-01-04 17:18:51,579 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为负数，执行通过
+2021-01-04 17:18:51,674 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为小数，执行通过
+2021-01-04 17:18:52,150 - [test_06aduit.py-->line:109] - INFO: 用例审核通过，执行通过
+2021-01-04 17:18:52,433 - [test_06aduit.py-->line:109] - INFO: 用例审核不通过，执行通过
+2021-01-04 17:18:52,625 - [test_06aduit.py-->line:109] - INFO: 用例项目不待审核状态，执行通过
+2021-01-04 17:18:52,816 - [test_06aduit.py-->line:109] - INFO: 用例参数approved_or_not为空，执行通过
+2021-01-04 17:18:53,016 - [test_06aduit.py-->line:109] - INFO: 用例项目id为空，执行通过
+2021-01-04 17:18:53,202 - [test_06aduit.py-->line:109] - INFO: 用例项目id不存在，执行通过
+2021-01-04 17:18:54,314 - [test_07invest.py-->line:144] - INFO: 用例投资人正常投资，执行通过
+2021-01-04 17:18:54,408 - [test_07invest.py-->line:144] - INFO: 用例投资人id为空，执行通过
+2021-01-04 17:18:54,501 - [test_07invest.py-->line:144] - INFO: 用例标id为空，执行通过
+2021-01-04 17:18:54,600 - [test_07invest.py-->line:144] - INFO: 用例投资金额为空，执行通过
+2021-01-04 17:30:37,346 - [test_01register.py-->line:63] - INFO: 用例注册成功-带注册名，执行通过
+2021-01-04 17:30:37,638 - [test_01register.py-->line:63] - INFO: 用例成功-不带用户名，执行通过
+2021-01-04 17:30:37,726 - [test_01register.py-->line:63] - INFO: 用例不输入手机号，执行通过
+2021-01-04 17:30:37,838 - [test_01register.py-->line:63] - INFO: 用例手机号长度10位，执行通过
+2021-01-04 17:30:37,923 - [test_01register.py-->line:63] - INFO: 用例手机号长度12位，执行通过
+2021-01-04 17:30:38,009 - [test_01register.py-->line:63] - INFO: 用例手机号含有非法字符，执行通过
+2021-01-04 17:30:38,110 - [test_01register.py-->line:63] - INFO: 用例已注册过的手机号，执行通过
+2021-01-04 17:30:38,292 - [test_01register.py-->line:63] - INFO: 用例密码7位，执行通过
+2021-01-04 17:30:38,475 - [test_01register.py-->line:63] - INFO: 用例密码17位，执行通过
+2021-01-04 17:30:38,664 - [test_01register.py-->line:63] - INFO: 用例不输入密码，执行通过
+2021-01-04 17:30:38,849 - [test_01register.py-->line:63] - INFO: 用例注册名11位，执行通过
+2021-01-04 17:30:39,036 - [test_01register.py-->line:63] - INFO: 用例类型输入非0，1内容，执行通过
+2021-01-04 17:30:39,233 - [test_01register.py-->line:59] - ERROR: 用例手机号为字符串类型，执行未通过
+2021-01-04 17:30:39,233 - [test_01register.py-->line:60] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_01register.py", line 49, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 17:30:39,335 - [test_02login.py-->line:56] - INFO: 用例登录成功，执行通过
+2021-01-04 17:30:39,428 - [test_02login.py-->line:56] - INFO: 用例手机号为空，执行通过
+2021-01-04 17:30:39,519 - [test_02login.py-->line:56] - INFO: 用例密码为空，执行通过
+2021-01-04 17:30:39,618 - [test_02login.py-->line:56] - INFO: 用例手机号未注册，执行通过
+2021-01-04 17:30:39,717 - [test_02login.py-->line:56] - INFO: 用例密码错误，执行通过
+2021-01-04 17:30:39,810 - [test_02login.py-->line:56] - INFO: 用例手机号格式错误，执行通过
+2021-01-04 17:30:40,170 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例充值成功，执行通过
+2021-01-04 17:30:40,440 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例充值成功-金额为小数，执行通过
+2021-01-04 17:30:40,534 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例id错误(不是当前用的id)，执行通过
+2021-01-04 17:30:40,625 - [test_03recharge_withdraw.py-->line:80] - INFO: 用例不输入id，执行通过
+2021-01-04 17:30:40,719 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例不输入金额，执行未通过
+2021-01-04 17:30:40,720 - [test_03recharge_withdraw.py-->line:77] - ERROR: 1 != 2
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 67, in test_recharge
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2021-01-04 17:30:40,810 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额为负数，执行未通过
+2021-01-04 17:30:40,811 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2021-01-04 17:30:40,903 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额为500001，执行未通过
+2021-01-04 17:30:40,903 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于500000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于500000
+? ^
+
+2021-01-04 17:30:40,990 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额非数字，执行未通过
+2021-01-04 17:30:40,990 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额必须为数值型' != '余额必须为数值型'
+- 金额必须为数值型
+? ^
++ 余额必须为数值型
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须为数值型' != '余额必须为数值型'
+- 金额必须为数值型
+? ^
++ 余额必须为数值型
+? ^
+
+2021-01-04 17:30:41,081 - [test_03recharge_withdraw.py-->line:76] - ERROR: 用例充值金额小数点3位，执行未通过
+2021-01-04 17:30:41,081 - [test_03recharge_withdraw.py-->line:77] - ERROR: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+
+2021-01-04 17:30:41,444 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-整数，执行通过
+2021-01-04 17:30:41,716 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-1位小数，执行通过
+2021-01-04 17:30:41,991 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-2位小数，执行通过
+2021-01-04 17:30:42,268 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现成功-50万，执行通过
+2021-01-04 17:30:42,359 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id为空，执行通过
+2021-01-04 17:30:42,449 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id不存在，执行通过
+2021-01-04 17:30:42,545 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例会员id为数值，执行未通过
+2021-01-04 17:30:42,545 - [test_03recharge_withdraw.py-->line:132] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 122, in test_withdraw
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 17:30:42,652 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例会员id为小数，执行通过
+2021-01-04 17:30:42,744 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为0，执行未通过
+2021-01-04 17:30:42,745 - [test_03recharge_withdraw.py-->line:132] - ERROR: 2 != 0
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 122, in test_withdraw
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2021-01-04 17:30:42,845 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为负数，执行未通过
+2021-01-04 17:30:42,846 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2021-01-04 17:30:42,935 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额为空，执行未通过
+2021-01-04 17:30:42,935 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额为空' != '余额为空'
+- 金额为空
+? ^
++ 余额为空
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' != '余额为空'
+- 金额为空
+? ^
++ 余额为空
+? ^
+
+2021-01-04 17:30:43,025 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额-3位小数，执行未通过
+2021-01-04 17:30:43,025 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额小数超过两位' != '余额小数超过两位'
+- 金额小数超过两位
+? ^
++ 余额小数超过两位
+? ^
+
+2021-01-04 17:30:43,111 - [test_03recharge_withdraw.py-->line:131] - ERROR: 用例提现金额-大于50万，执行未通过
+2021-01-04 17:30:43,111 - [test_03recharge_withdraw.py-->line:132] - ERROR: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+Traceback (most recent call last):
+  File "/Users/hanjiping/Downloads/柠檬班学习视频/接口部分/20200901_测试报告的发送&jenkins集成/py31_27day_project/testcase/test_03recharge_withdraw.py", line 123, in test_withdraw
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '金额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 金额必须大于0并且小于或者等于500000
+? ^
++ 余额必须大于0并且小于或者等于5000000
+? ^                    +
+
+2021-01-04 17:30:43,200 - [test_03recharge_withdraw.py-->line:135] - INFO: 用例提现金额-非数字，执行通过
+2021-01-04 17:30:43,483 - [test_05add.py-->line:69] - INFO: 用例加标成功，执行通过
+2021-01-04 17:30:43,576 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款人id为空，执行通过
+2021-01-04 17:30:43,665 - [test_05add.py-->line:69] - INFO: 用例加标失败—标题为空，执行通过
+2021-01-04 17:30:43,755 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为空，执行通过
+2021-01-04 17:30:43,846 - [test_05add.py-->line:69] - INFO: 用例加标失败—年利率为空，执行通过
+2021-01-04 17:30:43,943 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款期限为空，执行通过
+2021-01-04 17:30:44,038 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款期限类型为空，执行通过
+2021-01-04 17:30:44,130 - [test_05add.py-->line:69] - INFO: 用例加标失败—竞标天数为空，执行通过
+2021-01-04 17:30:44,222 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款人id不是当前登录用户，执行通过
+2021-01-04 17:30:44,319 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为负数，执行通过
+2021-01-04 17:30:44,414 - [test_05add.py-->line:69] - INFO: 用例加标失败—借款金额为小数，执行通过
+2021-01-04 17:30:44,890 - [test_06aduit.py-->line:109] - INFO: 用例审核通过，执行通过
+2021-01-04 17:30:45,168 - [test_06aduit.py-->line:109] - INFO: 用例审核不通过，执行通过
+2021-01-04 17:30:45,351 - [test_06aduit.py-->line:109] - INFO: 用例项目不待审核状态，执行通过
+2021-01-04 17:30:45,537 - [test_06aduit.py-->line:109] - INFO: 用例参数approved_or_not为空，执行通过
+2021-01-04 17:30:45,721 - [test_06aduit.py-->line:109] - INFO: 用例项目id为空，执行通过
+2021-01-04 17:30:45,915 - [test_06aduit.py-->line:109] - INFO: 用例项目id不存在，执行通过
+2021-01-04 17:30:47,029 - [test_07invest.py-->line:144] - INFO: 用例投资人正常投资，执行通过
+2021-01-04 17:30:47,121 - [test_07invest.py-->line:144] - INFO: 用例投资人id为空，执行通过
+2021-01-04 17:30:47,216 - [test_07invest.py-->line:144] - INFO: 用例标id为空，执行通过
+2021-01-04 17:30:47,306 - [test_07invest.py-->line:144] - INFO: 用例投资金额为空，执行通过
